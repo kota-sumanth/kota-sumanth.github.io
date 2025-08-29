@@ -1,0 +1,193 @@
+/* style.css */
+
+/* Base styles */
+body {
+  background: linear-gradient(135deg, #001f3f, #3D0075, #ff00cc);
+  color: #ffeecc;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 10px;
+}
+
+/* Links */
+a {
+  color: #ffcc00; /* bright yellow */
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: #ff66cc; /* neon pink */
+  text-decoration: underline;
+  text-shadow:
+    0 0 5px #ff66cc,
+    0 0 10px #ff66cc,
+    0 0 20px #ff00cc,
+    0 0 30px #ff00cc;
+}
+
+a:visited {
+  color: #ffaa00; /* darker yellow */
+}
+
+a:active {
+  color: #ff33aa; /* vibrant pink-purple */
+}
+
+/* Remove bullets from project lists */
+.projects-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Headings with neon glow */
+h1, h2, h3 {
+  color: #ff66cc;
+  text-shadow:
+    0 0 5px #ff66cc,
+    0 0 10px #ff00cc,
+    0 0 20px #ff00cc,
+    0 0 30px #ff66cc;
+}
+
+/* Paragraph text subtle glow */
+p {
+  color: #ffeecc;
+  text-shadow: 0 0 2px #ff00cc;
+}
+
+/* Buttons - neon arcade style */
+button, .btn {
+  background: #ff00cc;            /* neon pink background */
+  border: 2px solid #ff66cc;     /* lighter pink border */
+  color: #ffeecc;                /* pale yellow text */
+  font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
+  padding: 12px 24px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px #ff00cc, 0 0 10px #ff66cc; /* subtle glow */
+  border-radius: 4px;            /* slightly rounded corners */
+}
+
+button:hover, .btn:hover {
+  background: #ff66cc;
+  box-shadow: 0 0 10px #ff00cc, 0 0 20px #ff66cc;
+  color: #fff;
+}
+
+.subtitle {
+  color: #ffeecc;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  text-shadow:
+    0 0 5px #ff66cc,
+    0 0 10px #ff00cc;
+}
+
+.section-header {
+  color: #ff66cc;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;  /* smaller than main h1 */
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-shadow:
+    0 0 5px #ff66cc,
+    0 0 10px #ff00cc,
+    0 0 15px #ff00cc;
+}
+
+.content-container {
+  max-width: 700px;        /* limits the width */
+  margin: 0 auto;          /* centers the container */
+  padding: 0 20px;         /* horizontal padding for small screens */
+  text-align: left;        /* left-align text inside container */
+  color: #ffeecc;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
+  line-height: 1.6;
+  text-shadow: 0 0 2px #ff00cc;
+}
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  padding: 5px;
+  border: 2px solid #ffcc00; /* gold border */
+  border-radius: 8px;
+  animation: pulse-gold 1s infinite alternate; /* faster pulse */
+}
+
+.projects-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.projects-list li {
+  margin: 20px 0;
+}
+
+.project-card {
+  display: inline-block;
+  padding: 15px 25px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  color: #ffeecc;
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid #33ffee;
+  border-radius: 8px;
+  text-shadow: 0 0 3px #33ffee;
+  box-shadow:
+    0 0 5px #33ffee,
+    0 0 10px #33ffee,
+    0 0 15px #33ffee;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  color: #000;
+  background-color: #33ffee;
+  text-shadow: none;
+  box-shadow:
+    0 0 10px #33ffee,
+    0 0 20px #33ffee,
+    0 0 40px #33ffee;
+}
+
+@keyframes pulse-gold {
+  0% {
+    box-shadow:
+      0 0 5px #ffcc00,
+      0 0 10px #ffcc00,
+      0 0 15px #ffcc00;
+  }
+  100% {
+    box-shadow:
+      0 0 15px #ffcc00,
+      0 0 25px #ffcc00,
+      0 0 35px #ffcc00;
+  }
+}
