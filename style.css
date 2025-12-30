@@ -82,11 +82,12 @@ figure {
 }
 
 figcaption {
-  margin-top: 8px;
-  font-size: 0.9rem;
-  color: #555;
-  font-style: italic;
+  margin-top: 6px;
+  font-size: 0.65rem; /* smaller text */
+  color: #666;
+  font-style: normal; /* remove italic */
 }
+
 
 /* Buttons - neon arcade style */
 button, .btn {
@@ -210,3 +211,4 @@ button:hover, .btn:hover {
   }
 
 }
+
