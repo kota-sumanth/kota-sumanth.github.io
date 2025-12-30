@@ -83,7 +83,7 @@ figure {
 
 figcaption {
   margin-top: 6px;
-  font-size: 0.65rem; /* smaller text */
+  font-size: 0.4rem; /* smaller text */
   color: #666;
   font-style: normal; /* remove italic */
 }
@@ -211,4 +211,5 @@ button:hover, .btn:hover {
   }
 
 }
+
 
